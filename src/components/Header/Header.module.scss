@@ -14,14 +14,15 @@
   }
 
   .header__logo {
-    width: 75%;
+    min-width: 75%;
+    object-fit: cover;
 
     @media (min-width: 768px) {
-      width: 25%;
+      min-width: 25%;
     }
 
     @media (min-width: 1023px) {
-      width: 10%;
+      min-width: 14%;
     }
   }
 
@@ -42,6 +43,7 @@
     font-family: 'Raleway', sans-serif;
     height: 50vh;
     justify-content: center;
+    overflow: auto;
     position: absolute;
     right: 0;
     text-align: center;
@@ -81,6 +83,7 @@
     color: #FFF;
     font-family: 'Raleway', sans-serif;
     justify-content: center;
+    overflow: auto;
     text-align: center;
 
     @media (min-width: 768px) {
