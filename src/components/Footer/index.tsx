@@ -16,10 +16,10 @@ export default function Footer() {
         <div className={styles.footer__content_container}>
           <p className={styles.footer__content_title}>Acesse nossas redes:</p>
           <ul className={styles.footer__links_container}>
-            <li><a href=""><img src={whatsappIcon} alt="Logo Whatsapp" /></a></li>
-            <li><a href=""><img src={twitchIcon} alt="Logo Twitch" /></a></li>
-            <li><a href="https://www.instagram.com"><img src={instagramIcon} alt="Logo Instagram" /></a></li>
-            <li><a href=""><img src={twitterIcon} alt="Logo Twitter" /></a></li>
+            <li><a href="https://web.whatsapp.com/"><img src={whatsappIcon} alt="Logo Whatsapp" /></a></li>
+            <li><a href="https://www.twitch.tv/"><img src={twitchIcon} alt="Logo Twitch" /></a></li>
+            <li><a href="https://www.instagram.com/"><img src={instagramIcon} alt="Logo Instagram" /></a></li>
+            <li><a href="https://twitter.com/"><img src={twitterIcon} alt="Logo Twitter" /></a></li>
           </ul>
         </div>
       </div>
