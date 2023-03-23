@@ -1,0 +1,26 @@
+@import 'assets/styles/_variables.scss';
+
+.banner__container {
+  width: 100vw;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  img {
+    width: 100%;
+    opacity: .4;
+  }
+
+  .banner__text {
+    position: absolute;
+
+    h1 {
+      font-family: 'Calistoga', sans-serif;
+      font-size: 2rem;
+      font-weight: 400;
+      text-align: center;
+      color: $grey-dark;
+    }
+  }
+}
