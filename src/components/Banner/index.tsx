@@ -11,7 +11,7 @@ export default function Banner() {
   useEffect(() => {
     setScreenWidth(window.innerWidth);
     getCurrentBackground(screenWidth)
-  });
+  }, [screenWidth]);
 
   function getCurrentBackground(width: number) {
     if (width < 768) {
