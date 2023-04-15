@@ -6,7 +6,6 @@
   flex-direction: row;
   justify-content: space-evenly;
   padding: 1rem 0;
-  width: 100vw;
 
   @media (min-width: 768px) and (max-width: 1023px) {
     flex-direction: column;
@@ -96,6 +95,11 @@
 
       li {
         padding: 1rem 0;
+
+        &:hover {
+          cursor: pointer;
+          opacity: .8;
+        }
 
         p {
           font-size: 1rem;

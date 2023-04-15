@@ -1,7 +1,6 @@
 @import 'assets/styles/_variables.scss';
 
 .banner__container {
-  width: 100vw;
   position: relative;
   display: flex;
   justify-content: center;
@@ -10,6 +9,11 @@
   img {
     width: 100%;
     opacity: .4;
+    object-fit: cover;
+
+    @media (min-width: 1023px) {
+      height: 50vh;
+    }
   }
 
   .banner__text {
