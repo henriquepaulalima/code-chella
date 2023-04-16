@@ -1,3 +1,4 @@
+import Attractions from "components/Attractions";
 import Banner from "components/Banner";
 import DateAndLocation from "components/DateAndLocation";
 
@@ -6,6 +7,7 @@ export default function Main() {
     <main>
       <Banner />
       <DateAndLocation />
+      <Attractions />
     </main>
   );
 }
