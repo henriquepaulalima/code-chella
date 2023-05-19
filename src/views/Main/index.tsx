@@ -1,6 +1,6 @@
-import Attractions from "components/Attractions";
-import Banner from "components/Banner";
-import DateAndLocation from "components/DateAndLocation";
+import Attractions from "views/Main/Attractions";
+import Banner from "./Banner";
+import DateAndLocation from "./DateAndLocation";
 
 export default function Main() {
   return (
