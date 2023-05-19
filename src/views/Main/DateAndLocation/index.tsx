@@ -1,4 +1,5 @@
-import Button from 'components/Button';
+
+import Button from '../../../components/Button';
 import styles from './DateAndLocation.module.scss';
 import date_and_location_img from 'assets/imgs/date_and_location.png'
 
