@@ -1,10 +1,10 @@
-import styles from './Banner.module.scss';
+import styles from './MainBanner.module.scss';
 import bannerMobile from 'assets/imgs/banner_mobile.jpg';
 import bannerTablet from 'assets/imgs/banner_tablet.jpg';
 import bannerDesktop from 'assets/imgs/banner_desktop.jpg';
 import { useEffect, useState } from 'react';
 
-export default function Banner() {
+export default function MainBanner() {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
   const [currentBackground, setCurrentBackground] = useState('');
 
