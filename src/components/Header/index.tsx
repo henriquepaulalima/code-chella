@@ -3,19 +3,22 @@ import logo from 'assets/imgs/logo_white.png';
 import menuIcon from 'assets/imgs/menu.svg';
 import closeIcon from 'assets/imgs/close.svg';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 function Header() {
   const [isMenuOpened, setIsMenuOpened] = useState(false);
 
   return (
     <nav className={styles.header__container}>
-      <img className={styles.header__logo} src={logo} alt="Logo do Code Chella" />
+      <Link to="/">
+        <img className={styles.header__logo} src={logo} alt="Logo do Code Chella" />
+      </Link>
       {
         isMenuOpened && (
           <div className={styles.header__links}>
             <img onClick={() => setIsMenuOpened(!isMenuOpened)} src={closeIcon} alt="Ícone do menu lateral" />
             <ul>
-              <li><p>A experiência</p></li>
+              <Link to="/experience"><li><p>A experiência</p></li></Link>
               <li><p>Mapa de Setores</p></li>
               <li><p>Informações</p></li>
               <li><p>Ingresso</p></li>
@@ -25,7 +28,7 @@ function Header() {
       }
       <div className={styles.header__desktop_links}>
         <ul>
-          <li><p>A experiência</p></li>
+          <Link to="/experience"><li><p>A experiência</p></li></Link>
           <li><p>Mapa de Setores</p></li>
           <li><p>Informações</p></li>
           <li><p>Ingresso</p></li>
