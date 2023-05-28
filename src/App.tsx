@@ -1,6 +1,6 @@
 import Footer from "components/Footer";
 import Header from "components/Header";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Experience from "views/Experience";
 import Main from "views/Main";
 
