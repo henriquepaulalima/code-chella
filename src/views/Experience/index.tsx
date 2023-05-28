@@ -2,6 +2,7 @@ import AccessibilityAndInclusion from './AccessibilityAndInclusion/Accessibility
 import styles from './Experience.module.scss';
 import ExperienceBanner from "./ExperienceBanner";
 import Sustainability from './Sustainability/Sustainability';
+import ExperienceAttractions from './ExperienceAttractions/ExperienceAttractions';
 
 export default function Experience() {
   return (
@@ -9,6 +10,7 @@ export default function Experience() {
       <ExperienceBanner />
       <AccessibilityAndInclusion />
       <Sustainability />
+      <ExperienceAttractions />
     </main>
   );
 }
