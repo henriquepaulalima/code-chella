@@ -19,7 +19,7 @@ function Header() {
             <img onClick={() => setIsMenuOpened(!isMenuOpened)} src={closeIcon} alt="Ícone do menu lateral" />
             <ul>
               <Link to="/experience"><li><p>A experiência</p></li></Link>
-              <li><p>Mapa de Setores</p></li>
+              <Link to="/sectors"><li><p>Mapa de Setores</p></li></Link>
               <li><p>Informações</p></li>
               <li><p>Ingresso</p></li>
             </ul>
@@ -29,7 +29,7 @@ function Header() {
       <div className={styles.header__desktop_links}>
         <ul>
           <Link to="/experience"><li><p>A experiência</p></li></Link>
-          <li><p>Mapa de Setores</p></li>
+          <Link to="/sectors"><li><p>Mapa de Setores</p></li></Link>
           <li><p>Informações</p></li>
           <li><p>Ingresso</p></li>
         </ul>
