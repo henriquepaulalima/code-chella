@@ -1,0 +1,24 @@
+.experience_banner__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  
+  img {
+    opacity: .4;
+    object-fit: contain;
+    width: 100%;
+  }
+
+  p {
+    position: absolute;
+    font-family: 'Calistoga', sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    color: #444;
+
+    @media (min-width: 768px) {
+      font-size: 3rem;
+    }
+  }
+}
