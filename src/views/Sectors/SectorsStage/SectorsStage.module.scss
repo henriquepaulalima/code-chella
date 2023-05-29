@@ -1,0 +1,73 @@
+@import 'assets/styles/_variables.scss';
+
+.sectors_stage__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: 1024px) {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  img {
+    width: 100%;
+
+    @media (min-width: 1024px) {
+      width: 50%;
+    }
+  }
+
+  .sectors_stage__legend_list {
+    display: flex;
+    flex-direction: column;
+
+    h3 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      font-family: 'Raleway', sans-serif;
+      color: $grey-dark;
+      padding: 1rem 0;
+    }
+
+    .sectors_stage__legend {
+      display: flex;
+      flex-direction: row;
+      padding: .5rem 0;
+
+      div {
+        height: 1.5rem;
+        width: 1.5rem;
+        border-radius: 5px;
+      }
+
+      .premium {
+        background: #0E7DF1;
+      }
+
+      .comum {
+        background: #FE016E;
+      }
+
+      .ground_floor {
+        background: #01A89E;
+      }
+
+      .superior {
+        background: #3F51B5;
+      }
+
+      .ramps {
+        background: #0E7DF1;
+      }
+
+      p {
+        font-size: 1.25rem;
+        font-weight: 500;
+        font-family: 'Raleway';
+        color: $grey-dark;
+        padding: 0 1rem;
+      }
+    }
+  }
+}
