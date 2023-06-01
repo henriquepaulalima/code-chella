@@ -20,7 +20,7 @@ function Header() {
             <ul>
               <Link to="/experience"><li><p>A experiência</p></li></Link>
               <Link to="/sectors"><li><p>Mapa de Setores</p></li></Link>
-              <li><p>Informações</p></li>
+              <Link to="/information"><li><p>Informações</p></li></Link>
               <li><p>Ingresso</p></li>
             </ul>
           </div>
@@ -30,7 +30,7 @@ function Header() {
         <ul>
           <Link to="/experience"><li><p>A experiência</p></li></Link>
           <Link to="/sectors"><li><p>Mapa de Setores</p></li></Link>
-          <li><p>Informações</p></li>
+          <Link to="/information"><li><p>Informações</p></li></Link>
           <li><p>Ingresso</p></li>
         </ul>
       </div>
