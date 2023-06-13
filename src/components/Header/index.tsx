@@ -21,7 +21,7 @@ function Header() {
               <Link to="/experience"><li><p>A experiência</p></li></Link>
               <Link to="/sectors"><li><p>Mapa de Setores</p></li></Link>
               <Link to="/information"><li><p>Informações</p></li></Link>
-              <li><p>Ingresso</p></li>
+              <Link to="/buy-ticket"><li><p>Ingresso</p></li></Link>
             </ul>
           </div>
         )
