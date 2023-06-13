@@ -1,0 +1,32 @@
+@import 'assets/styles/_variables.scss';
+
+.accordion__container {
+  padding: 2rem;
+
+  .accordion__box {
+    margin: .5rem 0;    
+    
+    .accordion_title__container {
+      background: $summer-dark-blue;
+
+      .accordion_title__text {
+        color: #fff;
+        font-weight: bold;
+      }
+    }
+
+    .accordion_content__container {
+      background: $summer-light-blue;
+
+      .accordion_content__text {
+        color: #000;
+        font-weight: 300;
+
+        .accordion_content__text_link {
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
