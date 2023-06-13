@@ -18,20 +18,20 @@ function Header() {
           <div className={styles.header__links}>
             <img onClick={() => setIsMenuOpened(!isMenuOpened)} src={closeIcon} alt="Ícone do menu lateral" />
             <ul>
-              <Link to="/experience"><li><p>A experiência</p></li></Link>
-              <Link to="/sectors"><li><p>Mapa de Setores</p></li></Link>
-              <Link to="/information"><li><p>Informações</p></li></Link>
-              <Link to="/buy-ticket"><li><p>Ingresso</p></li></Link>
+              <Link to="/experience" onClick={() => setIsMenuOpened(!isMenuOpened)}><li><p>A experiência</p></li></Link>
+              <Link to="/sectors" onClick={() => setIsMenuOpened(!isMenuOpened)}><li><p>Mapa de Setores</p></li></Link>
+              <Link to="/information" onClick={() => setIsMenuOpened(!isMenuOpened)}><li><p>Informações</p></li></Link>
+              <Link to="/buy-ticket" onClick={() => setIsMenuOpened(!isMenuOpened)}><li><p>Ingresso</p></li></Link>
             </ul>
           </div>
         )
       }
       <div className={styles.header__desktop_links}>
         <ul>
-          <Link to="/experience"><li><p>A experiência</p></li></Link>
-          <Link to="/sectors"><li><p>Mapa de Setores</p></li></Link>
-          <Link to="/information"><li><p>Informações</p></li></Link>
-          <li><p>Ingresso</p></li>
+          <Link to="/experience" onClick={() => setIsMenuOpened(!isMenuOpened)}><li><p>A experiência</p></li></Link>
+          <Link to="/sectors" onClick={() => setIsMenuOpened(!isMenuOpened)}><li><p>Mapa de Setores</p></li></Link>
+          <Link to="/information" onClick={() => setIsMenuOpened(!isMenuOpened)}><li><p>Informações</p></li></Link>
+          <Link to="/buy-ticket" onClick={() => setIsMenuOpened(!isMenuOpened)}><li><p>Ingresso</p></li></Link>
         </ul>
       </div>
       <img onClick={() => setIsMenuOpened(!isMenuOpened)} className={styles.header__menu} src={menuIcon} alt="Ícone do menu lateral" />
