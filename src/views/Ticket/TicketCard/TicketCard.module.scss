@@ -1,0 +1,91 @@
+@import 'assets/styles/_variables.scss';
+
+.ticket_card__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+
+  .ticket_card__title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    color: $grey-dark;
+    padding: .5rem;
+
+    @media (min-width: 768px) {
+      padding: 2rem 6rem;
+    }
+  }
+
+  .ticket_card__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(180deg, #BFDAE6 0%, #FCF0DD 50%, #FACF9D 100%);
+    box-shadow: 4px 4px 8px 0px #00000026;
+    width: 85vw;
+    height: 100%;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    .ticket_card__body_header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      width: 100%;
+      padding: 1rem 0;
+
+      @media (min-width: 768px) {
+        justify-content: space-between;
+      }
+
+      img {
+        &:nth-child(1) {
+          width: 6rem;
+          object-fit: contain;
+        }
+
+        &:nth-child(2) {
+          width: 2rem;
+          object-fit: contain;
+        }
+
+        @media (min-width: 768px) {
+          padding: 0 3rem;
+        }
+      }
+    }
+
+    .ticket_card__body_qr_code img{
+      max-width: 65vw;
+    }
+
+    .ticket_card__body_info {
+      font-family: 'Raleway', sans-serif;
+      color: $grey-dark;
+      text-align: center;
+      padding: 1rem 0 2rem;
+
+      @media (min-width: 1024px) {
+        text-align: start;
+      }
+
+      h3 {
+        font-size: 2rem;
+        font-weight: 700;
+        padding: .5rem 2rem;
+      }
+
+      p {
+        font-size: 1.25rem;
+        font-weight: 500;
+        padding: .5rem 2rem;
+      }
+    }
+  }
+}
