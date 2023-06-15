@@ -39,6 +39,10 @@
         padding: .5rem 0;
         text-align: center;
       }
+
+      .inputError {
+        border: 3px solid $error-red;
+      }
     }
 
     .buy_ticket_form_double_label__container {
