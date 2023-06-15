@@ -41,9 +41,6 @@ export default function BuyTicketForm() {
     } else {
       setIsNameValid(true);
     }
-
-    console.log(name, isNameValid);
-    
   }
 
   const verifyEmail = () => {
@@ -54,9 +51,6 @@ export default function BuyTicketForm() {
     } else {
       setIsEmailValid(true);
     }
-
-    console.log(email, isEmailValid);
-    
   }
 
   const verifyCPF = () => {
@@ -67,9 +61,6 @@ export default function BuyTicketForm() {
     } else {
       setIsCPFValid(true);
     }
-
-    console.log(cpf, isCPFValid);
-    
   }
 
   const verifyBirthday = () => {
@@ -78,9 +69,6 @@ export default function BuyTicketForm() {
     } else {
       setIsBirthdatValid(true);
     }
-
-    console.log(birthdate, isBirthdatValid);
-    
   }
 
   const handleSubmit = (event: React.ChangeEvent<HTMLFormElement>) => {
@@ -97,9 +85,6 @@ export default function BuyTicketForm() {
     } else {
       setIsSubmitValid(false);
     }
-
-    console.log(isSubmitValid);
-    
   }
 
   return (
