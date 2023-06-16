@@ -86,4 +86,12 @@
       width: 50%;
     }
   }
+
+  .form_error_message {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: $error-red;
+    text-align: center;
+  }
 }

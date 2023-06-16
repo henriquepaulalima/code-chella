@@ -4,9 +4,11 @@ import { useNavigate } from 'react-router-dom';
 import React, { useState } from 'react';
 import classNames from 'classnames';
 import cpfMask from 'utils/cpfMask';
+import useUpdateCustomerData from 'state/hooks/useUpdateCustomerData';
 
 export default function BuyTicketForm() {
   const navigate = useNavigate();
+  const updateCustomerData = useUpdateCustomerData();
   const [name, setName] = useState('');
   const [isNameValid, setIsNameValid] = useState<boolean | null>(null);
   const [email, setEmail] = useState('');
@@ -33,7 +35,7 @@ export default function BuyTicketForm() {
     setBirthdate(event.target.value);
   }
 
-  const verifyName = () => {    
+  const verifyName = () => {
     const nameRegex = /^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]+$/u;
 
     if (!nameRegex.test(name) || name === '') {
@@ -54,7 +56,7 @@ export default function BuyTicketForm() {
   }
 
   const verifyCPF = () => {
-    const cpfRegex = /^\d{3}\.\d{3}\.\d{3}\-\d{2}$/;
+    const cpfRegex = /^\d{3}\.\d{3}\.\d{3}-\d{2}$/;
 
     if (!cpfRegex.test(cpf) || cpf === '') {
       setIsCPFValid(false);
@@ -81,6 +83,13 @@ export default function BuyTicketForm() {
 
     if (isNameValid && isEmailValid && isCPFValid && isBirthdatValid) {
       setIsSubmitValid(true);
+      const customerDataObject = {
+        name: name,
+        email: email,
+        cpf: cpf,
+        birthdate: birthdate,
+      };
+      updateCustomerData(customerDataObject);
       navigate('/ticket');
     } else {
       setIsSubmitValid(false);
@@ -154,6 +163,7 @@ export default function BuyTicketForm() {
           </label>
         </div>
         <Button type="submit">Avançar</Button>
+        {!isSubmitValid && <p className={styles.form_error_message}>Por favor preencha o formulário com informações válidas</p>}
       </form>
     </div>
   );

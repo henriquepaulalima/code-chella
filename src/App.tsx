@@ -1,6 +1,7 @@
 import Footer from "components/Footer";
 import Header from "components/Header";
 import { Route, Routes } from "react-router-dom";
+import { RecoilRoot } from "recoil";
 import BuyTicket from "views/BuyTicket/BuyTicket";
 import Experience from "views/Experience";
 import Information from "views/Information/Information";
@@ -10,8 +11,8 @@ import Ticket from "views/Ticket/Ticket";
 
 function App() {
   return (
-    <>
-      <Header />      
+    <RecoilRoot>
+      <Header />
         <Routes>
           <Route path="/" element={<Main />} />
           <Route path="/experience" element={<Experience />} />
@@ -21,7 +22,7 @@ function App() {
           <Route path="/ticket" element={<Ticket />} />
         </Routes>
       <Footer />
-    </>
+    </RecoilRoot>
   );
 }
 
